@@ -16,5 +16,22 @@ understanding
 ENDFUNCTION
 '''
 
+def sortAndFindMedian(numbers):
+    insertionSort(numbers)
+    n = len(numbers)
+    if n % 2 == 0:
+        return numbers[n/2 - 1]  + numbers[n/2] / 2
+    else:
+        return numbers[int(n/2)]
 
 
+def insertionSort(numbers):
+    for i in range(1, len(numbers)):
+        temp = numbers[i]
+        j = i
+        while j > 0 and numbers[j-1] > temp:
+            numbers[j] = numbers[j-1]
+            j -= 1
+        numbers[j] = temp
+
+    return numbers
