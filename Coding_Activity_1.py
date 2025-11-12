@@ -11,7 +11,7 @@ cities.
 4. Update Favourite Cities: Enable users to remove a city from their favourites and add a new one,
 ensuring the limit of three cities at a time
 '''
-api_key = "1a849286501d55967955eca71447e9d0"
+api_key = ""
 cities = ['', '' ,'']
 i = 0
 
